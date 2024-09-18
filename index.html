@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Makeup Store</h1>
+        <div class="cart">
+            <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+
+    <section class="product-list" id="product-list">
+        <!-- Products will be dynamically loaded here -->
+    </section>
+
+    <div class="pagination">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-number">1</span>
+        <button id="next-page">Next</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Makeup Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

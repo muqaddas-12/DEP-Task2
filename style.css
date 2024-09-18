@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    /* Light background color */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff85b2;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Cart Icon Styling */
+.cart {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 1.5em;
+}
+
+.cart a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Product List Styling */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+/* Product Image Styling */
+.product img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    border: 2px solid #ff85b2;
+    border-radius: 50%;
+}
+
+/* Product Name Styling */
+.product h2 {
+    font-size: 1.3em;
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Product Description Styling */
+.product p.description {
+    font-size: 0.9em;
+    color: #777;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+/* Product Price Styling */
+.product p.price {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Add to Cart Button Styling */
+button.add-to-cart {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button.add-to-cart:hover {
+    background-color: #ff1493;
+}
+
+/* Pagination Styling */
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #ff1493;
+}
+
+.pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Cart Page Styling */
+.cart-items {
+    padding: 40px;
+    background-color: #fce4ec;
+    /* Light pink background for cart */
+    text-align: center;
+}
+
+.cart-items h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cart-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-items li {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-items button#clear-cart {
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cart-items button#clear-cart:hover {
+    background-color: #c20071;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff69b4;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.1em;
+}
